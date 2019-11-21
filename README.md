@@ -1,2 +1,2 @@
-# exampleservice
-The example service
+# QuickCore
+The QuickCore framework
