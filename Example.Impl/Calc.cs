@@ -2,6 +2,7 @@
 
 namespace Example.Impl
 {
+    [System.ServiceImplClass(typeof(ICalc))]
     public class Calc : ICalc
     {
         public double Add(double a, double b)

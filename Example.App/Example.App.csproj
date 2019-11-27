@@ -2,10 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
+    <RunAnalyzersDuringLiveAnalysis>true</RunAnalyzersDuringLiveAnalysis>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Example.Api\Example.Api.csproj" />
+    <ProjectReference Include="..\Example.Impl\Example.Impl.csproj" />
     <ProjectReference Include="..\QuickCore.ApiHost\QuickCore.ApiHost.csproj" />
   </ItemGroup>
 
