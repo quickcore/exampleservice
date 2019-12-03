@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UserSecretsId>1204dfca-f6d7-4877-98d5-72e06e61cbf1</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\QuickCore.ApiHost\QuickCore.ApiHost.csproj" />
+    <ProjectReference Include="..\ServiceCenter.Api\ServiceCenter.Api.csproj" />
+    <ProjectReference Include="..\ServiceCenter.Impl.Mongo\ServiceCenter.Impl.Mongo.csproj" />
+  </ItemGroup>
+
+</Project>

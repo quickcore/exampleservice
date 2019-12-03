@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\QuickCore.Api\QuickCore.Api.csproj" />
+    <ProjectReference Include="..\ServiceCenter.Core\ServiceCenter.Core.csproj" />
+  </ItemGroup>
+
+</Project>
