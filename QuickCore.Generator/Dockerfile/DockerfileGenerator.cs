@@ -25,6 +25,7 @@ namespace QuickCore.Generator.Dockerfile
         private string CreateDockerFileContent(DockerfileContext context)
         {
             StringBuilder sb = new StringBuilder();
+            sb.AppendLine("# created by QuickCoreGenerator");
             sb.AppendLine($"FROM mcr.microsoft.com/dotnet/core/aspnet:{context.NetCoreVersion}-buster-slim AS base");
             sb.AppendLine("WORKDIR /app");
             if (context.HttpPort.HasValue)
@@ -48,6 +49,16 @@ namespace QuickCore.Generator.Dockerfile
             sb.AppendLine("FROM base AS final");
             sb.AppendLine("WORKDIR /app");
             sb.AppendLine("COPY --from=publish /app/publish .");
+
+            sb.AppendLine(@"RUN mkdir /tmp/quickcore_tmp && \");
+            sb.AppendLine(@"	mkdir /var/log/quickcore_log && \");
+            sb.AppendLine(@"	mkdir /quickcore_data");
+            sb.AppendLine("");
+            sb.AppendLine("ENV AppFolder__TempFolder /tmp/quickcore_tmp");
+            sb.AppendLine("ENV AppFolder__LogFolder /var/log/quickcore_log");
+            sb.AppendLine("ENV AppFolder__DataFolder /quickcore_data");
+            sb.AppendLine("");
+
             sb.AppendLine($"ENTRYPOINT [\"dotnet\", \"{context.EntryDllName}\"]");
 
             return sb.ToString();
