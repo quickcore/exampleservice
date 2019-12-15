@@ -44,7 +44,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceCenter.App", "Servic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceCenter.Impl.File", "ServiceCenter.Impl.File\ServiceCenter.Impl.File.csproj", "{643818CF-79B7-4AC9-A22F-0A9C73A17AD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickCore.Base", "QuickCore.Base\QuickCore.Base.csproj", "{BFE096F9-3DA4-41C1-91F3-71F8071D89CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickCore.Base", "QuickCore.Base\QuickCore.Base.csproj", "{BFE096F9-3DA4-41C1-91F3-71F8071D89CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

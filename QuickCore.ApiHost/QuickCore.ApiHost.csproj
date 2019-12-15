@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="YS.Extentions.Base" Version="1.0.1" />
+    <PackageReference Include="YS.Extentions.Base" Version="1.0.3" />
     <PackageReference Include="YS.System.Base" Version="1.0.0" />
   </ItemGroup>
 

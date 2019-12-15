@@ -2,8 +2,15 @@
   "name": "svc1",
   "description": "xxxxxxxxxx",
   "version": "1.0.0",
-  "dockerfile": ".",
+  "image": ".",
+  "depenson": {
+    "db": "1.0.2"
+  }
   "env": {
-    "ABC": "xxx"
+    "ABC": "xxx",
+    "CONNECTION": "<% $.db.connect %>"
+  },
+  "export": {
+    "ASP": ""
   }
 }

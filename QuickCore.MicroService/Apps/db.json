@@ -1,0 +1,16 @@
+{
+  "name": "svc1",
+  "description": "xxxxxxxxxx",
+  "version": "1.0.0",
+  "image": ".",
+  "vars": {
+    "UserName": "user",
+    "UserPassword": "<% newpwd() %>",
+    "RootPassword": "<% new_pwd() %>",
+    "InnerPort": 1433,
+    "Url": "<% host() %>"
+  },
+  "env": {
+    "MYSQL_ROOT_PASSWORD": "<% $.Password %>"
+  }
+}

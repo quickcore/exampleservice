@@ -1,8 +1,9 @@
 ﻿using Example.Core;
+using System;
 
 namespace Example.Impl
 {
-    [System.ServiceImplClass(typeof(ICalc))]
+    [ServiceClass]
     public class Calc : ICalc
     {
         public double Add(double a, double b)

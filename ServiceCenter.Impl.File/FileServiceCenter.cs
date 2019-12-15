@@ -10,7 +10,7 @@ using QuickCore;
 
 namespace ServiceCenter.Impl.File
 {
-    [ServiceImplClass(typeof(IServiceCenter))]
+    [ServiceClass()]
     public class FileServiceCenter : IServiceCenter
     {
         static JsonSerializerSettings serializerSettings = new JsonSerializerSettings()
@@ -67,7 +67,6 @@ namespace ServiceCenter.Impl.File
             {
                 return null;
             }
-
         }
         private string GetDataFilePath(string name, string version)
         {

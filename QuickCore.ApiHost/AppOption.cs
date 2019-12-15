@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace QuickCore.ApiHost
 {
-    [ConfigClass("App")]
+    [OptionsClass("App")]
     public class AppOption
     {
         public string[] Plugins { get; set; } = new[] { "*.dll" };
