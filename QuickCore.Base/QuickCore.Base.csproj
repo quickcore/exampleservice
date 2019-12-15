@@ -8,8 +8,4 @@
     <PackageReference Include="YS.Extentions.Base" Version="1.0.1" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\ServiceCenter.Core\ServiceCenter.Core.csproj" />
-  </ItemGroup>
-
 </Project>

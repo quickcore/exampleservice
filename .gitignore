@@ -5,3 +5,4 @@ obj/
 /build/gffffffftb.deps.json
 /build
 /ServiceCenter.App/*.user
+/QuickCore.MicroService/*.user

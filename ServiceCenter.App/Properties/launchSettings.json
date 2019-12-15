@@ -12,6 +12,7 @@
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
+        "AppFolder__DataFolder": "e:/bbbb",
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },

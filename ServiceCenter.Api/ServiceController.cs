@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace ServiceCenter.Api
 {
-    public class ServiceController : ApiBase<IServiceCenter>
+    public class ServiceController : ApiBase<IServiceCenter>,IServiceCenter
     {
         [HttpPost]
         public void AddServiceInfo(ServiceInfo serviceInfo)

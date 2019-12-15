@@ -1,0 +1,9 @@
+{
+  "name": "svc1",
+  "description": "xxxxxxxxxx",
+  "version": "1.0.0",
+  "dockerfile": ".",
+  "env": {
+    "ABC": "xxx"
+  }
+}

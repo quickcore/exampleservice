@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "QuickCore.MicroService": {
+      "commandName": "Project",
+      "commandLineArgs": "create -f  E:\\Repos\\quickcore\\Example.App\\app_define.json  E:\\Repos\\quickcore"
+    }
+  }
+}

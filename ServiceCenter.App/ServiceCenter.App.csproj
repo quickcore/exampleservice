@@ -13,7 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\QuickCore.ApiHost\QuickCore.ApiHost.csproj" />
     <ProjectReference Include="..\ServiceCenter.Api\ServiceCenter.Api.csproj" />
-    <ProjectReference Include="..\ServiceCenter.Impl.Mongo\ServiceCenter.Impl.Mongo.csproj" />
+    <ProjectReference Include="..\ServiceCenter.Impl.File\ServiceCenter.Impl.File.csproj" />
   </ItemGroup>
 
 </Project>

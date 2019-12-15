@@ -2,7 +2,7 @@
   "profiles": {
     "QuickCore.Generator": {
       "commandName": "Project",
-      "commandLineArgs": "docker -p \"E:\\Repos\\quickcore\\WebApplication2\\WebApplication2.csproj\" -f"
+      "commandLineArgs": "docker -p \"E:\\Repos\\quickcore\\Example.App\\Example.App.csproj\" -f"
     }
   }
 }
