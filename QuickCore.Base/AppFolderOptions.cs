@@ -3,7 +3,7 @@
 namespace QuickCore
 {
     [OptionsClass("AppFolder")]
-    public class AppFolderOption
+    public class AppFolderOptions
     {
         public string DataFolder { get; set; } = "app_data";
 

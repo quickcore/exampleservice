@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Text;
 
-namespace QuickCore.ApiHost
+namespace QuickCore
 {
-    [OptionsClass("App")]
-    public class AppOption
+    [OptionsClass]
+    public class AppOptions
     {
         public string[] Plugins { get; set; } = new[] { "*.dll" };
 

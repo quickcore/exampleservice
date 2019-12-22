@@ -12,7 +12,7 @@ namespace QuickCore.ServiceCenter.Controllers
     public class ServiceController : Api.ApiBase
     {
         // GET: api/Service
-        [HttpGet]
+        [HttpGet()]
         public IEnumerable<string> Get()
         {
             return new string[] { "value1", "value2" };

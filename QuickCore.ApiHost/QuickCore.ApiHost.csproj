@@ -21,4 +21,8 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\QuickCore.Base\QuickCore.Base.csproj" />
+  </ItemGroup>
+
 </Project>
