@@ -18,11 +18,11 @@ namespace ServiceCenter.Impl.File
             ContractResolver = new CamelCasePropertyNamesContractResolver(),
             NullValueHandling = NullValueHandling.Ignore
         };
-        public FileServiceCenter(IOptions<AppFolderOption> option)
+        public FileServiceCenter(IOptions<AppFolderOptions> option)
         {
             this.fileOption = option;
         }
-        private IOptions<AppFolderOption> fileOption;
+        private IOptions<AppFolderOptions> fileOption;
 
         public void AddServiceInfo(ServiceInfo serviceInfo)
         {
