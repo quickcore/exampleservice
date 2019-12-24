@@ -1,11 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
+
+using QuickCore.WebHosting;
 
 namespace ServiceCenter.App
 {
@@ -13,7 +7,7 @@ namespace ServiceCenter.App
     {
         public static void Main(string[] args)
         {
-            QuickCore.ApiHost.ApiHost.Run(args);
+            Host.Run(args);
         }
 
 

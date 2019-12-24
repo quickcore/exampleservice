@@ -13,8 +13,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickCore.Api", "QuickCore.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickCore.Test", "QuickCore.Test\QuickCore.Test.csproj", "{F38130C6-9CFB-4761-B44B-68292A0601CB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickCore.ApiHost", "QuickCore.ApiHost\QuickCore.ApiHost.csproj", "{2FC7D438-A014-4B20-92D2-D220E10A09B9}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example.App", "Example.App\Example.App.csproj", "{64D368E4-5F48-4A91-BD61-1102D6ED8425}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example.Api", "Example.Api\Example.Api.csproj", "{D0208A96-CA7F-4DB9-A27F-FB27071DCE3A}"
@@ -32,8 +30,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickCore.MicroService", "QuickCore.MicroService\QuickCore.MicroService.csproj", "{88BAED67-9AB6-45A7-B4D8-222619F7FBA9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickCore.ServiceCenter", "QuickCore.ServiceCenter\QuickCore.ServiceCenter.csproj", "{48383DA8-D66D-48CC-9949-E74185A89C49}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceCenter", "ServiceCenter", "{3C3CC4AD-A173-41CF-9945-602DBAB076A4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceCenter.Core", "ServiceCenter.Core\ServiceCenter.Core.csproj", "{D24723D4-E0CA-4587-8AA7-65C555438E09}"
@@ -45,6 +41,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceCenter.Impl.File", "ServiceCenter.Impl.File\ServiceCenter.Impl.File.csproj", "{643818CF-79B7-4AC9-A22F-0A9C73A17AD2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuickCore.Base", "QuickCore.Base\QuickCore.Base.csproj", "{BFE096F9-3DA4-41C1-91F3-71F8071D89CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickCore.Hosting", "QuickCore.Hosting\QuickCore.Hosting.csproj", "{61EED695-3760-4363-96E1-9A74AC4C8FF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickCore.WebHosting", "QuickCore.WebHosting\QuickCore.WebHosting.csproj", "{65619C96-15D2-40C6-9442-2667AAEFFAD6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -72,10 +72,6 @@ Global
 		{F38130C6-9CFB-4761-B44B-68292A0601CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F38130C6-9CFB-4761-B44B-68292A0601CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F38130C6-9CFB-4761-B44B-68292A0601CB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2FC7D438-A014-4B20-92D2-D220E10A09B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2FC7D438-A014-4B20-92D2-D220E10A09B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2FC7D438-A014-4B20-92D2-D220E10A09B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2FC7D438-A014-4B20-92D2-D220E10A09B9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{64D368E4-5F48-4A91-BD61-1102D6ED8425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{64D368E4-5F48-4A91-BD61-1102D6ED8425}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64D368E4-5F48-4A91-BD61-1102D6ED8425}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -92,10 +88,6 @@ Global
 		{88BAED67-9AB6-45A7-B4D8-222619F7FBA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88BAED67-9AB6-45A7-B4D8-222619F7FBA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88BAED67-9AB6-45A7-B4D8-222619F7FBA9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{48383DA8-D66D-48CC-9949-E74185A89C49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{48383DA8-D66D-48CC-9949-E74185A89C49}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{48383DA8-D66D-48CC-9949-E74185A89C49}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{48383DA8-D66D-48CC-9949-E74185A89C49}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D24723D4-E0CA-4587-8AA7-65C555438E09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D24723D4-E0CA-4587-8AA7-65C555438E09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D24723D4-E0CA-4587-8AA7-65C555438E09}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -116,6 +108,14 @@ Global
 		{BFE096F9-3DA4-41C1-91F3-71F8071D89CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFE096F9-3DA4-41C1-91F3-71F8071D89CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFE096F9-3DA4-41C1-91F3-71F8071D89CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61EED695-3760-4363-96E1-9A74AC4C8FF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61EED695-3760-4363-96E1-9A74AC4C8FF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61EED695-3760-4363-96E1-9A74AC4C8FF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61EED695-3760-4363-96E1-9A74AC4C8FF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65619C96-15D2-40C6-9442-2667AAEFFAD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65619C96-15D2-40C6-9442-2667AAEFFAD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65619C96-15D2-40C6-9442-2667AAEFFAD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65619C96-15D2-40C6-9442-2667AAEFFAD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

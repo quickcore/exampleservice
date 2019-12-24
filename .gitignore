@@ -6,3 +6,4 @@ obj/
 /build
 /ServiceCenter.App/*.user
 /QuickCore.MicroService/*.user
+/QuickCore.WebHosting/*.user

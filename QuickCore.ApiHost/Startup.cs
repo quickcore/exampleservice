@@ -18,7 +18,7 @@ namespace QuickCore.ApiHost
         public Startup(IConfiguration configuration)
         {
             this.configuration = configuration;
-            this.appOption = configuration.GetConfigOrNew<AppOptions>();
+            this.appOption = configuration.GetConfigOrNew<WebAppOptions>();
 
             this.LoadPlugins();
         }
@@ -27,7 +27,7 @@ namespace QuickCore.ApiHost
             string rootPath = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
             plugins = PluginLoader.LoadPlugins(rootPath, this.appOption.Plugins);
         }
-        private AppOptions appOption;
+        private WebAppOptions appOption;
         private Assembly[] plugins;
         private IConfiguration configuration;
         // This method gets called by the runtime. Use this method to add services to the container.

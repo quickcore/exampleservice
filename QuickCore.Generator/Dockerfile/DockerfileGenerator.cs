@@ -54,9 +54,9 @@ namespace QuickCore.Generator.Dockerfile
             sb.AppendLine(@"	mkdir /var/log/quickcore_log && \");
             sb.AppendLine(@"	mkdir /quickcore_data");
             sb.AppendLine("");
-            sb.AppendLine("ENV AppFolder__TempFolder /tmp/quickcore_tmp");
-            sb.AppendLine("ENV AppFolder__LogFolder /var/log/quickcore_log");
-            sb.AppendLine("ENV AppFolder__DataFolder /quickcore_data");
+            sb.AppendLine("ENV App__TempFolder /tmp/quickcore_tmp");
+            sb.AppendLine("ENV App__LogFolder /var/log/quickcore_log");
+            sb.AppendLine("ENV App__DataFolder /quickcore_data");
             sb.AppendLine("");
 
             sb.AppendLine($"ENTRYPOINT [\"dotnet\", \"{context.EntryDllName}\"]");
