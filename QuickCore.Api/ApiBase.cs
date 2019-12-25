@@ -6,7 +6,7 @@ namespace QuickCore.Api
 {
     [ApiController]
     [Route("[controller]")]
-    public  class ApiBase:ControllerBase
+    public abstract class ApiBase:ControllerBase
     {
         
     }
