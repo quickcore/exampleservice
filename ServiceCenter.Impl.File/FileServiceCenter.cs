@@ -6,7 +6,7 @@ using System.Linq;
 using Microsoft.Extensions.Options;
 using Microsoft.Extensions.FileProviders;
 using Newtonsoft.Json.Serialization;
-using QuickCore;
+using Knife;
 
 namespace ServiceCenter.Impl.File
 {

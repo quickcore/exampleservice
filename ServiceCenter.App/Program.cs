@@ -1,5 +1,6 @@
 
-using QuickCore.WebHosting;
+
+using Knife.WebHosting;
 
 namespace ServiceCenter.App
 {
